@@ -1,0 +1,12 @@
+.contain {
+    width: 100%;
+    height: 100vh;
+}
+
+.containLight {
+    background:  white;
+}
+
+.containDark { 
+    background: #1F2937;
+}

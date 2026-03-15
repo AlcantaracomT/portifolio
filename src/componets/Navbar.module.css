@@ -1,0 +1,144 @@
+.containNavbar {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.containLight{
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.containDark{
+    background-color: #FFF176;
+}
+
+.navbarPag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 4px 30px;
+    height: 92px;
+}
+
+.navbarPag img {
+    width: 140px;
+    max-width: 100%;
+    height: auto;
+}
+
+.navLinksPag {
+    list-style: none;
+    display: flex;
+    gap: clamp(20px, 4vw, 60px);
+    margin: 0 8%;
+    padding: 0;
+    font-size: clamp(16px, 1.2vw, 21px);
+}
+
+.navLinksPag li a {
+    text-decoration: none;
+    padding: 13px 18px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.navLinksPag li a:hover {
+    border: 3px solid #C5CAE9;
+    padding: 10px 15px;
+}
+
+.navLinksPag a.active {
+    background-color: #477853;
+    color: white;
+    padding: 12px 20px;
+    box-shadow: 0 6px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+/* mode */
+.navLinksPag.active {
+    display: block;
+}
+
+.navbarLight li a{
+    color: #303F9F;
+}
+
+.navbarDark li a{
+    color: black;
+}
+
+.navbarDark li a:hover {
+    border: 3px solid white;
+}
+
+.menuMobile {
+    display: none;
+    cursor: pointer;
+}
+
+.menuMobile div {
+    width: 32px;
+    height: 2px;
+    background: #477853;
+    margin: 10px;
+}
+
+.menuMobile.active .line1 {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.menuMobile.active .line2 {
+    opacity: 0;
+}
+
+.menuMobile.active .line3 {
+    transform: rotate(-45deg) translate(8px, -8px);
+}
+
+
+/* Tablet */
+@media (max-width: 1024px) {
+
+    .menuMobile {
+        display: block;
+        transition: transform 0.3s ease-in;
+    }
+
+    .navbar-pag {
+        padding: 27px 20px;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .navLinksPag {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        margin: 0px;
+        padding: 20px 0;
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .navLinksPag li {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .nav-pag-pag li a {
+        font-size: 20px;
+    }
+}

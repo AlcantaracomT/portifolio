@@ -1,0 +1,16 @@
+.contain {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  position: absolute;
+}
+
+
+button {
+  width: 26px;
+  height: 26px;
+  background: azure;
+
+  margin-right: 200px;
+  margin-top: 150px;
+}
