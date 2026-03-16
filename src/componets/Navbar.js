@@ -8,7 +8,7 @@ function Navbar({ isActive }) {
     return (
         <div className={`${styles.containNavbar} ${containClass}`}>
             <nav className={styles.navbarPag}>
-                <img src="https://sarxebrarq.com/wp-content/uploads/2024/03/component-4.png"></img>
+                <img src=""></img>
                 <div className={styles.menuMobile}>
                     <div className={styles.line1}></div>
                     <div className={styles.line2}></div>

@@ -1,16 +1,35 @@
 .contain {
-  width: 100%;
   display: flex;
-  justify-content: end;
   position: absolute;
+  width: 57px;
+  margin-top: 150px;
+  margin-right: 10%;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.containLight {
+  justify-content: start;
+  border: 1px solid #C5CAE9;
+}
+
+.containLight > .buttonMod {
+  background: #C5CAE9;
+}
+
+.containDark {
+  justify-content: end;
+  border: 1px solid #FFF176;
+}
+
+.containDark > .buttonMod {
+  background:#FFF176;
 }
 
 
-button {
-  width: 26px;
-  height: 26px;
-  background: azure;
-
-  margin-right: 200px;
-  margin-top: 150px;
+.buttonMod {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  transition: .1s ease-in;
 }

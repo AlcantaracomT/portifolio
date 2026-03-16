@@ -14,7 +14,7 @@ function Pag() {
     return (
         <div className={styles.contain}>
             <Navbar isActive={isActive} />
-            <ButtonMode toggleMode={toggleMode} text="oi" />
+            <ButtonMode isActive={isActive} toggleMode={toggleMode}/>
             <Home isActive={isActive}/>
         </div>
     )

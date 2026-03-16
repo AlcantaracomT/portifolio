@@ -8,11 +8,36 @@
 
 .containLight{
     background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .containDark{
     background-color: #FFF176;
+    animation: lamp 0.8s ease;
+}
+
+@keyframes lamp{
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.2;
+    }
+    30% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .navbarPag {
