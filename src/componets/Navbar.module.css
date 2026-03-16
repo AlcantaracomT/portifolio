@@ -6,6 +6,12 @@
     z-index: 1000;
 }
 
+.containDark .containNavbarShadow {
+    box-shadow: 0 2px 8px black; 
+    height: 99px;
+    z-index: -1;
+}
+
 .containLight{
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
@@ -14,6 +20,7 @@
 .containDark{
     background-color: #FFF176;
     animation: lamp 0.8s ease;
+    box-shadow: 0 32px 60px #ffffff78;
 }
 
 @keyframes lamp{

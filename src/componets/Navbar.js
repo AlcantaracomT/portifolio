@@ -7,6 +7,7 @@ function Navbar({ isActive }) {
 
     return (
         <div className={`${styles.containNavbar} ${containClass}`}>
+            <div className={`${styles.containNavbar} ${styles.containNavbarShadow}`}></div>
             <nav className={styles.navbarPag}>
                 <img src=""></img>
                 <div className={styles.menuMobile}>
