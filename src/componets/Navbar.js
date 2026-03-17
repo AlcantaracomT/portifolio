@@ -3,7 +3,7 @@ import styles from './Navbar.module.css'
 function Navbar({ isActive }) {
 
     const containClass = isActive ? styles.containDark : styles.containLight
-    const navbarClass = isActive ? styles.navbarDark : styles.navbarLight
+    const navbarClass = isActive ? styles.navbarDark : ""
 
     return (
         <div className={`${styles.containNavbar} ${containClass}`}>

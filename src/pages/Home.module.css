@@ -1,12 +1,95 @@
 .contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100vh;
+    background: white;
 }
 
-.containLight {
-    background:  white;
-}
-
-.containDark { 
+.containDark {
     background: #1F2937;
 }
+
+.containTwo {
+    display: block;
+}
+
+.containMod {
+    display: flex;
+    gap: 89px;
+    justify-content: space-between;
+    stroke: black;
+}
+
+.containDark .containMod{
+    stroke: white;
+    color: #FFFFFF;
+}
+
+
+.line {
+    width: 250px;
+    height: 1px;
+    background: #000000;
+    margin-top: 57px;
+}
+
+.containDark .line{
+    background: white;
+}
+
+.containObject {
+    display: ruby;
+    padding: 25px;
+}
+
+h1 {
+    font-size: 100px;
+    color: #303F9F;
+}
+
+.letterDark h1 {
+    color: #FFF176;
+    animation: lamp 0.8s ease;
+}
+
+@keyframes lamp {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.2;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.containObject p {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.letterDark p {
+    color: #FFFFFF;
+}   

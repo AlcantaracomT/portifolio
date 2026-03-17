@@ -13,12 +13,12 @@
 }
 
 .containLight{
-    background-color: white;
+    background: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .containDark{
-    background-color: #FFF176;
+    background: #FFF176;
     animation: lamp 0.8s ease;
     box-shadow: 0 32px 60px #ffffff78;
 }
@@ -78,6 +78,7 @@
     border-radius: 5px;
     display: inline-block;
     font-weight: bold;
+    color: #303F9F;
 }
 
 .navLinksPag li a:hover {
@@ -96,10 +97,6 @@
 /* mode */
 .navLinksPag.active {
     display: block;
-}
-
-.navbarLight li a{
-    color: #303F9F;
 }
 
 .navbarDark li a{
