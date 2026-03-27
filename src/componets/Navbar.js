@@ -1,20 +1,16 @@
 import styles from './Navbar.module.css'
+import Logo from './Logo'
 
 function Navbar({ isActive }) {
 
-    const containClass = isActive ? styles.containDark : styles.containLight
-    const navbarClass = isActive ? styles.navbarDark : ""
+    const containClass = isActive ? styles.containLight :styles.containDark
+    const navbarClass = isActive ?  "" : styles.navbarDark
 
     return (
         <div className={`${styles.containNavbar} ${containClass}`}>
             <div className={`${styles.containNavbar} ${styles.containNavbarShadow}`}></div>
             <nav className={styles.navbarPag}>
-                <img src=""></img>
-                <div className={styles.menuMobile}>
-                    <div className={styles.line1}></div>
-                    <div className={styles.line2}></div>
-                    <div className={styles.line3}></div>
-                </div>
+                <Logo />
                 <ul className={`${styles.navLinksPag} ${navbarClass}`}>
                     <li><a href="">Sobre</a></li>
                     <li><a href="">Projetos</a></li>

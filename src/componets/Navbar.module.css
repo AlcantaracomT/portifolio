@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 .containNavbar {
     position: fixed !important;
     top: 0;
@@ -8,19 +10,14 @@
 
 .containDark .containNavbarShadow {
     box-shadow: 0 2px 8px black; 
-    height: 99px;
+    height: 92px;
     z-index: -1;
 }
 
-.containLight{
-    background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-}
-
 .containDark{
-    background: #FFF176;
+    background: #fff176;
     animation: lamp 0.8s ease;
-    box-shadow: 0 32px 60px #ffffff78;
+    box-shadow: 0 7px 44px #ffffff78;
 }
 
 @keyframes lamp{
@@ -49,11 +46,11 @@
 
 .navbarPag {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     margin: 0 auto;
-    padding: 4px 30px;
+    padding: 0px 30px;
     height: 92px;
 }
 
@@ -68,22 +65,31 @@
     display: flex;
     gap: clamp(20px, 4vw, 60px);
     margin: 0 8%;
-    padding: 0;
-    font-size: clamp(16px, 1.2vw, 21px);
+    padding: 0px;
+    font-size: clamp(16px, 0.8vw, 21px);
 }
 
 .navLinksPag li a {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     text-decoration: none;
-    padding: 13px 18px;
+    padding: 15px 19px;
     border-radius: 5px;
     display: inline-block;
     font-weight: bold;
     color: #303F9F;
+    font-size: 0.8 rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-align: end;
+
 }
 
 .navLinksPag li a:hover {
-    border: 3px solid #C5CAE9;
-    padding: 10px 15px;
+    border: 2px solid #303F9F;
+    padding: 14px 18px;
 }
 
 .navLinksPag a.active {
@@ -94,7 +100,6 @@
 }
 
 
-/* mode */
 .navLinksPag.active {
     display: block;
 }
@@ -104,31 +109,7 @@
 }
 
 .navbarDark li a:hover {
-    border: 3px solid white;
-}
-
-.menuMobile {
-    display: none;
-    cursor: pointer;
-}
-
-.menuMobile div {
-    width: 32px;
-    height: 2px;
-    background: #477853;
-    margin: 10px;
-}
-
-.menuMobile.active .line1 {
-    transform: rotate(45deg) translate(8px, 8px);
-}
-
-.menuMobile.active .line2 {
-    opacity: 0;
-}
-
-.menuMobile.active .line3 {
-    transform: rotate(-45deg) translate(8px, -8px);
+    border: 2px solid rgb(5, 4, 4);
 }
 
 
